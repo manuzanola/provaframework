@@ -1,0 +1,5 @@
+include: package:flutter_lints/flutter.yaml # Usa as recomendações padrão de análise do Flutter.
+analyzer: # Configura somente exclusões de arquivos gerados.
+  exclude: # Os fontes Dart autorais em lib e test continuam sendo analisados.
+    - build/** # Saída compilada, recriável pelo comando flutter build.
+    - web/** # Bootstrap e worker JavaScript gerados; não são fontes Dart do app.

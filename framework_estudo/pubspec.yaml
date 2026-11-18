@@ -1,0 +1,26 @@
+name: framework_estudo # Nome usado nos imports package: dos testes.
+description: Projeto de consulta comentado das duas revisões de Frameworks.
+publish_to: none # Aplicativo de estudo; não publica um pacote no pub.dev.
+version: 1.0.0+1 # Versão inicial do material de estudo.
+
+environment: # Requisitos mínimos da linguagem usada no código.
+  sdk: '>=3.6.0 <4.0.0' # Compatível com a base das revisões; validado com a versão descrita no README.
+
+dependencies: # Pacotes necessários para executar o aplicativo.
+  flutter: # Framework de interface.
+    sdk: flutter # Usa o SDK Flutter instalado.
+  cupertino_icons: 1.0.8 # Inclui os ícones iOS referenciados pelo DevicePreview.
+  provider: 6.1.5+1 # Declara explicitamente o pacote importado pela revisão 2.
+  sqflite_common: 2.5.4+6 # Mesma API SQLite da base enviada pelo professor.
+  sqflite_common_ffi_web: 0.4.5+4 # Mesma implementação web da base.
+  sqlite3: 2.9.4 # Mantém o driver e o binário WASM na família de versões da revisão.
+  device_preview: 1.2.0 # Pacote solicitado no enunciado da revisão 2.
+
+dev_dependencies: # Recursos usados na análise e nos testes.
+  flutter_test: # Infraestrutura de testes de regras e widgets.
+    sdk: flutter # Usa a versão que acompanha o SDK.
+  flutter_lints: 6.0.0 # Verificações estáticas de estilo e problemas comuns.
+  sqflite_common_ffi: 2.3.4+4 # Executa testes contra SQLite real no computador.
+
+flutter: # Configura os recursos da aplicação.
+  uses-material-design: true # Inclui os ícones usados nos botões e nas abas.
